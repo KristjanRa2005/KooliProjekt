@@ -1,0 +1,36 @@
+﻿@model KooliProjekt.Data.Reservationcs
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reservationcs</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AutoID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AutoID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.bron_len_min)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.bron_len_min)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.KM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.KM)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
